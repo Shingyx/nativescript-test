@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Test Plugin</string>
+    <string name="toast_text">Hello World!</string>
+</resources>
