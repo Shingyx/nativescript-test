@@ -1,5 +1,5 @@
 const childProcess = require('child_process');
-const fs = require('fs');
+const fs = require('fs-extra');
 const path = require('path');
 
 async function buildAndroidModule() {
@@ -27,7 +27,7 @@ async function buildAndroidModule() {
     });
 
     console.log('copying aar...');
-    fs.copyFileSync(
+    await fs.copy(
         path.join(modulePath, 'testplugin', 'build', 'outputs', 'aar', 'testplugin-release.aar'),
         path.join('platforms', 'android', 'testplugin.aar'),
     )

@@ -13,7 +13,7 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
-    "nativescript-test-plugin": "file:../nativescript-test-plugin/nativescript-test-plugin-0.1.0.tgz",
+    "nativescript-test-plugin": "file:../nativescript-test-plugin",
     "nativescript-theme-core": "~1.0.4",
     "tns-core-modules": "~4.2.0"
   },

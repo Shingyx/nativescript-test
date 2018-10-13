@@ -1,3 +1,4 @@
 modules-src/
 scripts/
 src/
+tsconfig.json
