@@ -28,7 +28,7 @@ export class HelloWorldModel extends Observable {
     public onTap() {
         this._counter--;
         this.updateMessage();
-        toast();
+        toast(this._counter);
     }
 
     private updateMessage() {

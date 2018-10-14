@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Test Plugin</string>
-    <string name="toast_text">Hello World!</string>
+    <string name="toast_text">Hello World! tapped=%1$d,remaining=%2$d</string>
 </resources>

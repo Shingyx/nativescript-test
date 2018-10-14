@@ -1,14 +1,19 @@
 import * as application from 'application';
 
 interface IToaster {
-    show(context: any): void;
+    show(context: any, remaining: number): void;
 }
 
 declare const com: any;
 
 const context = application.android.context;
 
-export function toast() {
-    const toaster: IToaster = new com.github.shingyx.testplugin.Toaster();
-    toaster.show(context);
+let toaster: IToaster | undefined;
+
+function getToaster(): IToaster {
+    return toaster || (toaster = new com.github.shingyx.testplugin.Toaster());
+}
+
+export function toast(remaining: number) {
+    getToaster().show(context, remaining);
 }

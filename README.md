@@ -6,7 +6,7 @@ Projects:
   - The template application modified to show the toast when the button is tapped
   - Currently references `nativescript-test-plugin` via a relative path
 
-Building:
+Building and running:
 
 - `cd nativescript-test-plugin`
 - `npm install`
